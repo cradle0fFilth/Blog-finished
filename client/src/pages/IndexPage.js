@@ -3,7 +3,7 @@ import Post from "../Post"
 export default function IndexPage() {
     const [posts, setPosts] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:4000/post').then(response => {
+        fetch('http://45.77.23.190:4000/post').then(response => {
             response.json().then(posts => {
                 setPosts(posts);
             });

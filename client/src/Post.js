@@ -3,7 +3,7 @@ export default function Post({ title, summary, cover, createdAt, author }) {
   return (
     <div className='post'>
       <div className='image'>
-        <img src={'http://localhost:4000/' + cover}></img>
+        <img src={'http://45.77.23.190:4000/' + cover}></img>
       </div>
       <div className='texts'>
         <h2>{title}</h2>
