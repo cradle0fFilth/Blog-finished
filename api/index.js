@@ -14,7 +14,7 @@ const fs = require('fs');
 const salt = bcrypt.genSaltSync(10);
 const secret = "hiqhwiqwoqkwpq"
 
-app.use(cors({ credentials: true, origin: 'http://localhost:3000' }));
+app.use(cors({ credentials: true, origin: '*' }));
 app.use(express.json());
 app.use(cookiePasrser());
 app.use('/uploads', express.static(__dirname + '/uploads'));
@@ -114,7 +114,7 @@ app.get('/post', async (req, res) => {
 });
 
 
-app.listen(4000);
+app.listen(4000,'0.0.0.0');
 //V4kpGX3HoarCBkre
 
 // mongodb+srv://blog:c98E7qKCzUgZ1Gmj@cluster0.ctuzl5r.mongodb.net/?retryWrites=true&w=majority
